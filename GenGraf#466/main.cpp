@@ -6,6 +6,8 @@ int n,A[100][100];
 int v[100];
 int d_p;
 
+//salut
+
 void afisare()
 {
     int temp=1;

@@ -31,6 +31,7 @@ void afisare()
 bool ok(int k)
 {
 
+
     return true;
 
 }

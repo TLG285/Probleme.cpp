@@ -1,5 +1,4 @@
-*
-!*.cpp
-!*.out
-!*.in
-!*.txt
+*.cbp
+*.depend
+*/bin
+*/obj

@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h>//hai noroc
 using namespace std;
 ifstream fin("gengraf.in");
 ofstream fout("gengraf.out");

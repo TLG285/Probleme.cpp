@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> //asdsaasdsad
 using namespace std;
 ifstream fin("gengraf.in");
 ofstream fout("gengraf.out");

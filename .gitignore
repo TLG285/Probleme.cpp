@@ -4,3 +4,7 @@
 */obj
 */vscode
 *.layout
+DFS/.vscode/c_cpp_properties.json
+DFS/.vscode/settings.json
+DFS/.vscode/tasks.json
+DFS/.vscode/launch.json

@@ -3,7 +3,8 @@
 using namespace std;
 ifstream fin("dfs.in");
 ofstream fout("dfs.out");
-int n, m, x;
+int n, m, x=0;
+
 class Graph
 {
 public:
@@ -13,13 +14,18 @@ public:
     {
         componente[v].push_back(v2);
     }
-
-    void dfs(int v)
+    void dfs(int i)
     {
-        parcurs[v] = true;
-        fout << v << " ";
-        vector<int>::iterator it;
-        
+        if(parcurs[i]==0)
+        {
+            x++;
+            parcurs[i]=1;
+        }
+        for(auto it:componente[i])
+        {   
+              if(!parcurs[it])
+              { parcurs[it]=1;}
+        }
     }
 };
 Graph graf;
@@ -31,13 +37,14 @@ void citire()
         graf.adaugare_varf(a, b);
         graf.adaugare_varf(b, a);
     }
-
-    graf.dfs(x);
+    for(int i=1;i<=n;i++)
+    graf.dfs(i);
+    fout<<x<<endl;
 }
 
 int main()
 {
 
-    fin >> n >> m >> x;
+    fin >> n >> m;
     citire();
 }
